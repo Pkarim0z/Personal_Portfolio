@@ -1,0 +1,255 @@
+:root {
+    --main-color: #fff;
+    --primary-color: #000;
+}
+
+.darkmode {
+    --main-color: #000;
+    --primary-color: #fff;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px; */
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+h1 {
+    padding-left: 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+header a, div a {
+    text-decoration: none;
+}
+
+header a, div a {
+    color: var(--primary-color);
+}
+
+header a:hover, div a:hover {
+    text-decoration: underline;
+}
+
+.lastlist {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.container h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.second-container {
+    border-right: 1px solid var(--primary-color);
+    padding-right: 45px;
+}
+
+.third-container {
+    border-right: 1px solid var(--primary-color);
+    padding-right: 45px;
+}
+
+.fourth-container {
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.lasthead {
+    margin: 10px 0;
+    padding-left: 130px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-list div {
+    border: 1px solid var(--primary-color);
+    width: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    line-height: 22px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    color : #000;
+    background-color: white;
+    border: 1px solid #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color : #fff;
+    background-color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1260px) {
+    .lasthead {
+        margin: 10px 0;
+        margin-left: -100px;
+    }
+    
+    .second-container {
+        padding-bottom: 65px;
+}
+
+    .third-container {
+        padding-bottom: 65px;
+}
+
+    .fourth-container {
+        padding-bottom: 65px;
+}
+}
+
+@media screen and (max-width: 1210px) {
+    .third-container {
+        padding-left: 30px;
+}
+
+    .fourth-container {
+        padding-left: 30px;
+}
+
+h1 {
+        font-size: 30px;
+}
+
+nav ul {
+    font-size: 20px;
+}
+
+ul button {
+    font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 880px) {
+    .second-container {
+        padding-bottom: 65px;
+}
+
+    .third-container {
+        padding-bottom: 65px;
+}
+
+    .fourth-container {
+        padding-bottom: 65px;
+}
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+}
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        grid: 1rem;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 18px;
+
+}
+
+    h1 {
+        padding-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .lastlist {
+        margin-right: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.main-container .second-container,
+.main-container .third-container,
+.main-container .fourth-container {
+    border-right: none;
+    padding: 15px 25px;
+    /* border-bottom: 1px solid var(--primary-color); */
+}
+
+.lasthead {
+    padding-right: 40px;
+    text-align: center;
+}
+
+.extra-card {
+    display: none;
+}
+
+.revews-container {
+    flex-direction: row;
+}
+
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+            <h1>Peter Karim</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="lastlist"><button id="tooglebutton">
+                    DarkMode
+                </button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Frontend Developer</h2>
+            <p>Just chilling while learning a way to gain money</p>
+        </div>
+
+        <div class="main-container">
+            <div class="second-container">
+                <h3>Projects</h3>
+                <p>Html only Portfolio</p>
+                <hr>
+                <p>calculator</p>
+                <hr>
+                <p>Quiz app</p>
+                <hr>
+                <p>Countdown Time</p>
+                <hr>
+                <p>Production Upcoming Page</p>
+            </div>
+
+            <div class="third-container">
+                <h3>Work Experience</h3>
+                <p>Roadmap.sh</p>
+                <p>Solving all the frontend projects</p>
+                <p><a href="">Visit my Profile</a></p>
+
+                <hr>
+
+                <p>Opensource Work</p>
+                <p>
+                    Contributed to 50 opensource projects. Made my own projects with 200 Github stars.
+                </p>
+                <p><a href="">Visit my Github Profile</a></p>
+            </div>
+            <div class="fourth-container">
+                <h3>Education</h3>
+                <p>
+                    <ul>
+                        <li>Graduated with 3.76 out of 4 CGPA.</li>
+                        <li>Won Acme Hackathon.</li>
+                        <li>Organized 30 sessions.</li>
+                    </ul>
+                </p>
+                <h4>Courses I took:</h4>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human  Computer Interaction</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="lasthead">Reviews From My Teachers</h3>
+
+        <div class="review-list">
+            <div .reviews-container>
+                <p>
+                    Peter Karim was studying only to earn money,Peter Karim was studying only to earn money,Peter Karim was studying only to earn money
+                </p>
+                <p>
+                    Peter Karim Assistance Professor
+                </p>
+            </div>
+            <div class="extra-card">
+                <p>
+                    Peter Karim was studying only to earn money,Peter Karim was studying only to earn money,Peter Karim was studying only to earn money
+                </p>
+                <p>
+                    Peter Karim Assistance Professor
+                </p>
+            </div>
+            <div class="extra-card">
+                <p>
+                    Peter Karim was studying only to earn money,Peter Karim was studying only to earn money,Peter Karim was studying only to earn money
+                </p>
+                <p>
+                    Peter Karim Assistance Professor
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; all rights reserved 2026</p>
+    </footer>
+</body>
+<script>
+    let btn = document.getElementById("tooglebutton")
+    btn.onclick = () => {
+        document.body.classList.toggle("darkmode");
+    }
+</script>
+</html>
